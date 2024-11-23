@@ -91,6 +91,11 @@ public class EmployeeController {
         return Result.success();
     }
 
+    /**
+     * 分页查询
+     * @param employeePageQueryDTO
+     * @return
+     */
     @GetMapping("/page")
     @ApiOperation("员工分页查询")
     //因为接受到前端的数据是query类型，不用转换为 json，所以不用加 @RequestBody
